@@ -24,4 +24,5 @@ Recuerda que el archivo `$PROFILE` se guarda en la carpeta raíz del usuario, es
 ### Si todo a salido bien tu consola deberia tener configurado el tema de tu preferencia.
 
 # Aqui les dejo una imagen y un link directo a mis temas ♥
-## 
+## [BlackHack Theme](https://github.com/Bryan-Herrera-DEV/My-OhMyPush-Themes/tree/main/themes/BlackHack-Theme)
+<img src="https://raw.githubusercontent.com/Bryan-Herrera-DEV/My-OhMyPush-Themes/main/themes/BlackHack-Theme/mytheme.png" width="500">
