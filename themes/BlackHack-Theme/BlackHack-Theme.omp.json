@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#88c0d0",
+          "properties": {
+            "template": "<#E36464>\u250f[ </>{{ .UserName }}<#E36464> ]</>"
+          },
+          "style": "plain",
+          "type": "session"
+        },
+        {
+          "foreground": "#e3d666",
+          "properties": {
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "template": "<#E36464>--[ </>{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }}<#65d66a> \u25cf </>{{ end }}{{ if .Staging.Changed }}<#5fcfb6> \u25cf </>{{ end }}<#E36464>]</>"
+          },
+          "style": "plain",
+          "type": "git"
+        },
+        {
+          "foreground": "#b48ead",
+          "properties": {
+            "template": "<#E36464>--[</>{{.Profile}}{{if .Region}}@{{.Region}}{{end}}<#E36464>]</>"
+          },
+          "style": "plain",
+          "type": "aws"
+        },
+        {
+          "foreground": "#b48ead",
+          "properties": {
+            "template": "<#E36464>--[</>{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}<#5e81ac>]</>"
+          },
+          "style": "plain",
+          "type": "kubectl"
+        },
+        {
+          "foreground": "#d8dee9",
+          "properties": {
+            "template": "<#E36464>[</>\uf0e7<#E36464>]</>"
+          },
+          "style": "plain",
+          "type": "root"
+        },
+        {
+          "foreground": "#d8dee9",
+          "properties": {
+            "template": "<#E36464>[x</>{{ .Meaning }}<#5e81ac>]</>"
+          },
+          "style": "plain",
+          "type": "exit"
+        },
+        {
+          "foreground": "#e3d666",
+          "properties": {
+            "template": "<#E36464>[</> \u2665 <#E36464>]</>"
+          },
+          "style": "plain",
+          "type": "session"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#88c0d0",
+          "properties": {
+            "style": "full",
+            "template": "<#E36464>\u2516[</>{{ .Path }}<#E36464>]</>"
+          },
+          "style": "plain",
+          "type": "path"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#E36464",
+          "properties": {
+            "template": " \ue602 "
+          },
+          "style": "plain",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": false,
+  "version": 1
+}
