@@ -8,4 +8,16 @@ Ahora les enseñare los pasos para poder instalar un tema personalizado.
 Para instalar [Oh My Posh](https://ohmyposh.dev/) desde la consola de windows haremos lo especificado en su [documentacion oficial](https://ohmyposh.dev/docs/windows)
 
 ## 2. Crear Nuestro profile
-En este archivo guardaremos las configuraciones que nosotros elijamos
+En este archivo guardaremos las configuraciones que nosotros elijamos. Para esto primero tendremos descargado nuestro tema. en el formato: `mytheme.omp.json`
+Una vez tengamos descargado nuestro tema personalizado procederemos a crear el archivo profile:
+- Abrir la terminal de windows:
+- Ejecutar el siguiente comando:
+```shell
+> notepad $PROFILE
+```
+- Una vez abierto el programa procederemos a escribir en el:
+```plain
+Import-Module oh-my-posh
+oh-my-posh --init --shell pwsh --config "~/<ruta del archivo>/mytheme.omp.json" | Invoke-Expression
+```
+Recuerda que el archivo `$PROFILE` se guarda en la carpeta raiz del usuario, es decir: `C:\Users\<tu usuario>`. Esto quiere decir que, si tu archivo `mytheme.omp.json` se encuentra en `C:\Users\<tu usuario>\Desktop` la ruta para invocar seria: `~/Dsktop/mytheme.omp.json`.
